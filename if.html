@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Ganjil Genap</title>
+</head>
+<body>
+    <h2>Program Cek Bilangan Ganjil Atau Genap</h2>
+
+    <label for="Angka">Masukkan Angka:</label>
+    <input type="Number" Id="Angka" placeholder="contoh:7">
+    <button onclick="cekAngka()">Cek</button>
+
+    <p Id="Hasil"></p>
+
+    <script>
+        function cekAngka(){
+            let Angka = document.getElementById("Angka").value;
+            if (angka === "") {
+                document.getElementById("Hasil").innerHTML="Harap Masukan Angka!";return;
+            }
+            if (Angka % 2 === 0){
+                document.getElementById("Hasil").innerHTML= angka+"Adalah Bilangan Genap.";
+            } else{
+                document.getElementById("Hasil").innerHTML= angka+"Adalah Bilangan Ganjil.";
+            }
+        }
+    </script>
+</body>
+</html>
